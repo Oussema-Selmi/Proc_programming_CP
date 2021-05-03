@@ -1,0 +1,56 @@
+PROCEDURE dot_product(v1,v2: ARRAY_OF FLOAT[];var dot : INTEGER)
+VAR
+    i ; INTEGER;
+BEGIN
+    IF (v1.length <> v2.length){
+        Write ("cannot calculate dot product of vectors with different sizes")
+    }
+    END_IF
+    IF (i<v1.length) {
+        dot+:=v1[i]*v2[i];
+    END_IF}
+END
+
+
+ALGORITHM are_they_orthogonal
+VAR
+    v1,v2 : ARRAY_OF INTEGER [50];
+    dot : INTEGER;
+BEGIN
+    IF (dot = 0) THEN
+        Write("V1 and V2 are orthogonal");
+    ELSE
+        Write("V1 and V2 are not orthogonal");
+    END_IF
+END
+
+
+
+
+// Func/Algo //
+
+PROCEDURE dot_product(v1,v2: ARRAY_OF FLOAT[];var dot : INTEGER)
+VAR
+    i ; INTEGER;
+BEGIN
+    IF (v1.length <> v2.length){
+        return ("cannot calculate dot product of vectors with different sizes")
+    }
+    END_IF
+    IF (i<v1.length) {
+        dot+:=v1[i]*v2[i];
+    END_IF}
+END
+
+
+ALGORITHM are_they_orthogonal
+VAR
+    v1,v2 : ARRAY_OF INTEGER [50];
+    dot : INTEGER;
+BEGIN
+    IF (dot = 0) THEN
+        Write("V1 and V2 are orthogonal");
+    ELSE
+        Write("V1 and V2 are not orthogonal");
+    END_IF
+END
